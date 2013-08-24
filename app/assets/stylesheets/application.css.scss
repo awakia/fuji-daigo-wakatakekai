@@ -35,11 +35,13 @@ p, h1, h2, h3, h4, h5, h6 {
 ul {
   list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
 #wrapper {
   margin: auto;
   width: 720px;
+  line-height: 16px;
   font-size: 12px;
   font-family: 'MS ゴシック',Osaka,sans-serif;
 }
@@ -61,7 +63,6 @@ ul {
   margin-bottom: -10000px;
 
   ul {
-    padding: 1px 0;
     display: block;
     a {
       text-decoration: underline;
