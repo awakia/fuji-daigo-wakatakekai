@@ -1,4 +1,8 @@
 FujiDaigoWakatakekai::Application.routes.draw do
+  get "static/index"
+  get "static/greeting"
+  get "static/links"
+  get "static/contact"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
