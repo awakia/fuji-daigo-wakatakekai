@@ -36,6 +36,28 @@
 
 #side {
   float: left;
+  width: 128px;
+  font-size: 12px;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #DDD;
+    display: block;
+    a {
+      color: #040;
+    }
+    li {
+      margin: 4px;
+      padding: 4px;
+      border: solid 1px #040;
+      background-color: #CFC;
+      .selected {
+        background-color: #CC9;
+      }
+    }
+  }
 }
 
 #footer {
