@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @import "twitter/bootstrap";
 
+/* basic css */
+
 @mixin clearfix {
   zoom: 1;
   &:before,
@@ -25,27 +27,44 @@
   float: right;
 }
 
+/* global clear */
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
 #wrapper {
   margin: auto;
   width: 720px;
+  font-size: 12px;
+  font-family: 'MS ゴシック',Osaka,sans-serif;
+}
+
+#container {
+  overflow: hidden;
 }
 
 #main {
   float: right;
+  width: 592px;
 }
 
 #side {
   float: left;
   width: 128px;
-  font-size: 12px;
+  background-color: #DDD;
+  padding-bottom: 10000px;
+  margin-bottom: -10000px;
 
   ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #DDD;
+    padding: 1px 0;
     display: block;
     a {
+      text-decoration: underline;
       color: #040;
     }
     li {
@@ -53,7 +72,7 @@
       padding: 4px;
       border: solid 1px #040;
       background-color: #CFC;
-      .selected {
+      &.selected {
         background-color: #CC9;
       }
     }
@@ -62,4 +81,8 @@
 
 #footer {
   clear: both;
+  text-align: center;
+  .gray {
+    background-color: #DDD;
+  }
 }
