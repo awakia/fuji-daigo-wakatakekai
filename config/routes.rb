@@ -1,5 +1,5 @@
 FujiDaigoWakatakekai::Application.routes.draw do
-  get "static/index"
+  root to: "static#index"
   get "static/greeting"
   get "static/links"
   get "static/contact"
@@ -43,7 +43,7 @@ FujiDaigoWakatakekai::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
