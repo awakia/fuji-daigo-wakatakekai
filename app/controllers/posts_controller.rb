@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  before_action :authenticate_admin
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   # GET /posts
@@ -70,5 +71,12 @@ class PostsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
       params.require(:post).permit(:path, :title, :content, :published_at)
+    end
+
+    def authenticate_admin
+      unless Rails.cache.exist?("manager")
+        head :not_found
+        return
+      end
     end
 end

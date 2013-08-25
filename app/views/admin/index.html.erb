@@ -1,0 +1,9 @@
+<div class="column">
+<h2>管理者用ログイン</h2>
+<div class="content">
+  <%= form_tag admin_authenticate_path do %>
+    <%= password_field_tag :key %>
+    <%= submit_tag "ログイン" %>
+  <% end %>
+</div>
+</div>

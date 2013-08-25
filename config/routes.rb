@@ -5,6 +5,9 @@ FujiDaigoWakatakekai::Application.routes.draw do
   get "static/greeting"
   get "static/links"
   get "static/contact"
+
+  get "admin", to: "admin#index"
+  post "admin/authenticate"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
