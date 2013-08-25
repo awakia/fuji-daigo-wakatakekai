@@ -50,6 +50,21 @@ ul {
   overflow: hidden;
 }
 
+.column {
+  margin: 4px;
+  border: solid 1px #FDD;
+  h2 {
+    padding: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    background-color: #FDD;
+  }
+  p {
+    padding: 10px 4px;
+  }
+}
+
 #main {
   float: right;
   width: 592px;
