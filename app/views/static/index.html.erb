@@ -1,3 +1,1 @@
-<% @posts.each do %>
-  <%= render @post %>
-<% end %>
+<%= render partial: "post", collection: @posts %>

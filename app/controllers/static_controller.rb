@@ -1,6 +1,6 @@
 class StaticController < ApplicationController
   def index
-    @posts = Post.all
+    @posts = Post.order(:published_at).all
   end
 
   def greeting

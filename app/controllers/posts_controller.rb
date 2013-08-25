@@ -75,7 +75,7 @@ class PostsController < ApplicationController
 
     def authenticate_admin
       unless Rails.cache.exist?("manager")
-        head :not_found
+        redirect_to admin_path
         return
       end
     end
