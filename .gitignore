@@ -15,5 +15,10 @@
 /log/*.log
 /tmp
 
+# Ignore commonly unnecessary files.
+*~
+#*#
+.DS_Store
+
 # Ignore confidential information files.
 .env
