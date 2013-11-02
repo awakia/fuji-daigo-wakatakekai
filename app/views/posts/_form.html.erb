@@ -24,8 +24,8 @@
     <%= f.text_area :content %>
   </div>
   <div class="field">
-    <%= f.label :published_at, "投稿日(投稿順に関係)" %><br>
-    <%= f.datetime_select :published_at %>
+    <%= f.label :published_at, "投稿日時(投稿順に関係)" %><br>
+    <%= f.datetime_select :published_at, use_month_numbers: true %>
   </div>
   <div class="actions">
     <%= f.submit "反映" %>
