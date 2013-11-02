@@ -40,6 +40,30 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :test, :development do
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'pry-stack_explorer'
+
+  if RUBY_VERSION >= '2.0.0'
+    gem 'pry-byebug'
+  else
+    gem 'pry-debugger'
+    gem 'pry-remote'
+  end
+
+  gem 'better_errors'
+  gem 'binding_of_caller'
+
+  gem 'hirb'
+  gem 'hirb-unicode'
+
+  gem 'tapp'
+  gem 'awesome_print'
+  gem 'quiet_assets'
+  gem 'annotate'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
