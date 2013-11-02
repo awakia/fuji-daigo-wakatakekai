@@ -62,6 +62,7 @@ group :test, :development do
   gem 'awesome_print'
   gem 'quiet_assets'
   gem 'annotate'
+  gem 'dotenv-rails'
 end
 
 # Use ActiveModel has_secure_password
