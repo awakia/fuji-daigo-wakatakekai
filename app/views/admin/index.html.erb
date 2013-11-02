@@ -1,9 +1,6 @@
 <div class="column">
-<h2>管理者用ログイン</h2>
+<h2>管理者用ページ</h2>
 <div class="content">
-  <%= form_tag admin_authenticate_path do %>
-    <%= password_field_tag :key %>
-    <%= submit_tag "ログイン" %>
-  <% end %>
+  <%= link_to '投稿管理', posts_path %>
 </div>
 </div>
