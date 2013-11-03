@@ -38,6 +38,10 @@ ul {
   padding: 0;
 }
 
+textarea {
+  resize: vertical;
+}
+
 #wrapper {
   margin: auto;
   width: 720px;
@@ -101,4 +105,8 @@ ul {
   .gray {
     background-color: #DDD;
   }
+}
+
+.field, .actions {
+  margin-bottom: 20px;
 }
