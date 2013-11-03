@@ -40,6 +40,7 @@ class Page
       Page.new(path: :anniv_mag, title: '富士高編集<br>記念誌', parent: :archive),
       Page.new(path: :song, title: '校歌', parent: :archive),
       Page.new(path: :photo_album, title: 'フォト<br>アルバム', parent: :archive),
+      Page.new(path: :link, title: 'リンク集'),
       Page.new(path: :form, title: '事務局への<br>連絡フォーム'),
       Page.new(path: :ucontact, title: '会員連絡先変更届'),
     ]

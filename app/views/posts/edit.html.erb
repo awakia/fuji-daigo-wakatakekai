@@ -1,8 +1,12 @@
 <div class="column">
-<h2>投稿編集</h2>
+<h2 class="sub-head">投稿編集</h2>
 
 <div class="content">
 <%= render 'form' %>
+</div>
+
+<div class="clearfix" style="margin: -50px 5px 20px;">
+  <%= button_to '削除', @post, method: :delete, data: { confirm: '本当に削除してよろしいですか？' }, class: "right" %>
 </div>
 
 <%= link_to '一覧へ', posts_path %>

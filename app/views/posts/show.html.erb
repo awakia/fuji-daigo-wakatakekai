@@ -1,12 +1,3 @@
-<div class="column">
-<h2><%= @post.title %></h2>
+<%= render partial: 'post', object: @post %>
 
-<div class="content">
-  <%= @post.content.html_safe %>
-</p>
-</div>
-
-</div>
-
-<%= link_to '編集する', edit_post_path(@post) %> |
 <%= link_to '一覧に戻る', posts_path %>
