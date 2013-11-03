@@ -9,7 +9,7 @@ class PagesController < ApplicationController
 
   private
     def render_page
-      @posts = Post.where(path: params[:action]).order(:published_at)
+      @posts = Post.published.where(path: params[:action]).order(:published_at)
       render :posts
     end
 end
