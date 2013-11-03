@@ -27,6 +27,10 @@
   float: right;
 }
 
+.hidden {
+  display: none;
+}
+
 /* global clear */
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -92,8 +96,12 @@ textarea {
       padding: 4px;
       border: solid 1px #040;
       background-color: #CFC;
+      &.tag_btn_sub {
+        margin-left: 32px;
+        background-color: #9F9;
+      }
       &.selected {
-        background-color: #CC9;
+        background-color: #FF9;
       }
     }
   }

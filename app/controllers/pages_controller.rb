@@ -1,10 +1,10 @@
 class PagesController < ApplicationController
   before_action :render_page
 
-  def root
-  end
-
-  def greeting
+  Page.all.map(&:path).each do |page|
+    define_method page do
+      # do noting
+    end
   end
 
   private

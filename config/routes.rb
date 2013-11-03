@@ -6,7 +6,7 @@ FujiDaigoWakatakekai::Application.routes.draw do
   get "admin", to: "admin#index"
 
   match "/:action",
-    :constraints => { :action => /root|greeting/ },
+    :constraints => { :action => /#{Page.all.map(&:path).join('|')}/ },
     :to => 'pages',
     :as => :pages,
     :via => [:get, :post]
