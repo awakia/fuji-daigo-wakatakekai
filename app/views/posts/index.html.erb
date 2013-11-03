@@ -1,5 +1,5 @@
 <div class="column">
-<h2>投稿管理 - 一覧</h2>
+<h2 class="sub-head">投稿管理 - 一覧</h2>
 
 <table class="table table-striped">
   <thead>
@@ -16,17 +16,14 @@
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.path %></td>
-        <td><%= link_to post.title, post_path(post) %></td>
+        <td><%= link_to post.title, edit_post_path(post) %></td>
         <td><%= post.content %></td>
         <td><%= post.published_at ? l(post.published_at) : '下書き' %></td>
-        <td><%= link_to '削除', post, method: :delete, data: { confirm: '本当に削除してよろしいですか？' } %></td>
+        <td><%= button_to '削除', post, method: :delete, data: { confirm: '本当に削除してよろしいですか？' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<br>
+</div>
 
 <%= link_to '新規投稿作成', new_post_path %>
-
-</div>

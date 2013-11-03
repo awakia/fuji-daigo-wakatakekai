@@ -3,7 +3,11 @@ FujiDaigoWakatakekai::Application.routes.draw do
 
   root to: "pages#root"
 
-  get "admin", to: "admin#index"
+  resources :admin, only: [:index] do
+    collection do
+      post :become_admin
+    end
+  end
 
   match "/:action",
     :constraints => { :action => /#{Page.all.map(&:path).join('|')}/ },

@@ -20,6 +20,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
+    session[:return_to] ||= request.referer
   end
 
   # POST /posts
@@ -43,7 +44,7 @@ class PostsController < ApplicationController
   def update
     respond_to do |format|
       if @post.update(post_params)
-        format.html { redirect_to @post, notice: 'Post was successfully updated.' }
+        format.html { redirect_to (session.delete(:return_to) || post_path(@post)), notice: 'Post was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -71,11 +72,5 @@ class PostsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
       params.require(:post).permit(:path, :title, :content, :published_at, :draft)
-    end
-
-    def authenticate_admin
-      authenticate_or_request_with_http_basic do |user, pass|
-        user == ENV['BASIC_AUTH_USER'] && pass == ENV['BASIC_AUTH_PASSWORD']
-      end
     end
 end
