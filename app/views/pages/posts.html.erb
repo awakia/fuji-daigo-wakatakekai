@@ -1,1 +1,5 @@
 <%= render partial: 'post', collection: @posts %>
+
+<% if cookies[:role] == 'fdw' %>
+  <%= link_to '新規投稿作成', new_post_path(path: params[:action]) %>
+<% end %>

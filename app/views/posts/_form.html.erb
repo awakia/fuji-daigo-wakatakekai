@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :path, "対象ページ" %><br>
-    <%= f.text_field :path, style: "width: 150px;" %>
+    <%= f.select :path, options_from_collection_for_select(Page.all, :path, :title, @post.path), style: "width: 150px;" %>
   </div>
   <div class="field">
     <%= f.label :title, "タイトル" %><br>
