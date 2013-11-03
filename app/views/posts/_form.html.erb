@@ -24,10 +24,31 @@
     <%= f.text_area :content %>
   </div>
   <div class="field">
+    <%= f.check_box :draft %>
+    <%= f.label :draft, "下書きとして保存" %><br>
+  </div>
+  <div class="field", id="published_at_field">
     <%= f.label :published_at, "投稿日時(投稿順に関係)" %><br>
     <%= f.datetime_select :published_at, use_month_numbers: true %>
   </div>
+
   <div class="actions">
     <%= f.submit "反映" %>
   </div>
+<% end %>
+
+<% content_for :extra_scripts do %>
+  <%= javascript_tag do %>
+    $(function() {
+      var check_draft = function() {
+        if ($('#post_draft').prop('checked')) {
+          $('#published_at_field').hide();
+        } else {
+          $('#published_at_field').show();
+        }
+      };
+      check_draft();
+      $('#post_draft').on('change', check_draft);
+    });
+  <% end %>
 <% end %>
