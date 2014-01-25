@@ -6,8 +6,10 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-p = Post.where(path: :greeting).first_or_initialize
-p.title = <<EOS<div style="font-family: monospace; margin-left: 10px;">2013/10/16　「事務局からのお知らせ」都立富士高校管弦楽団47周年記念演奏会のお知らせを追加
+p = Post.where(path: :root).first_or_initialize
+p.title = "更新履歴"
+p.content = <<-EOS
+<div style="font-family: monospace; margin-left: 10px;">2013/10/16　「事務局からのお知らせ」都立富士高校管弦楽団47周年記念演奏会のお知らせを追加
 2013/09/20　アーカイブに第61回富士祭の写真を追加
 2013/09/13　アーカイブに第61回富士祭のポスターを追加
 2013/09/12　「事務局からのお知らせ」第61回富士祭開催のお知らせ
