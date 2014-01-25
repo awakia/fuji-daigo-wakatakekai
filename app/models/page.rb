@@ -1,7 +1,7 @@
 class Page
   attr_accessor :path, :title, :parent
 
-  def initialize(path: path, title: title, parent: parent)
+  def initialize(path: nil, title: nil, parent: nil)
     @path = path
     @title = title
     @parent = parent
