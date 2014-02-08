@@ -28,6 +28,8 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'thin'
 
+gem 's3_file_field'
+
 group :development do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
