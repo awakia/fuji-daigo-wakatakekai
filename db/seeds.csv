@@ -73,6 +73,643 @@ whats_new,whats_new, 更新履歴,"<div class=""monospace"">2013/11/26　「事�
 2009/12/08　事務局からのお知らせをリニューアルしました
 2009/11/03　アーカイブに会報「若竹」３７号を掲載しました
 2009/10/15　ホームページ正式開設しました</div>",
+greeting,,役員会より,[[greeting.jpg]],
+about_us,,若竹会について,"<table width=""562"" border=""0"" cellspacing=""0"" cellpadding=""4"">
+  <tbody><tr align=""center"">
+    <td>[[kaisoku_icon.jpg(128,128)]]</a></td>
+    <td>[[fusoku_icon.jpg(128,128)]]</td>
+    <td>[[meibo_icon.jpg(128,128)]]</td>
+  </tr>
+  <tr align=""center"">
+    <td>&nbsp;</td>
+    <td>[[history_icon.jpg(128,128)]]</td>
+    <td>&nbsp;</td>
+  </tr>
+</tbody></table>",html
+kaisoku,,若竹会会則,"<table width=""562"" border=""0"" cellspacing=""0"" cellpadding=""4"">
+      <tbody><tr align=""left"" valign=""top"" bgcolor=""#CCFFFF"">
+        <td width=""50"">第１章</td>
+        <td width=""496"">総則</td>
+        </tr>
+      <tr align=""left"" valign=""top"">
+        <td>第１条</td>
+        <td>本会は東京都立富士高等学校若竹会と称する。</td>
+        </tr>
+      <tr align=""left"" valign=""top"">
+        <td>第２条</td>
+        <td>本会は会員相互の親睦を図り、合わせて母校の発展に寄与する事を目的とする。</td>
+        </tr>
+      <tr align=""left"" valign=""top"">
+        <td>第３条</td>
+        <td>本会事務所は東京都立富士高等学校内に置く。</td>
+        </tr>
+      <tr align=""left"" valign=""top"" bgcolor=""#CCFFFF"">
+        <td>第２章</td>
+        <td>会員</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>第４条</td>
+        <td>本会は東京府立第五高等女学校本科・同専攻科・東京都立第五高等女学校・同専攻科・同併設中学校・東京都立第五女子高等学校・東京都立富士高等学校卒業生並に中途退学者及び母校現職員並に旧職員を以って会員とする。</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>第５条</td>
+        <td>会員を次の２種に分つ。<table width=""480"" border=""0"" cellspacing=""0"" cellpadding=""4"">
+  <tbody><tr align=""left"" valign=""top"">
+    <td width=""55"">正会員</td>
+    <td width=""409"">第４条の卒業生および中途退学者</td>
+  </tr>
+  <tr align=""left"" valign=""top"">
+    <td>特別会員</td>
+    <td>母校現職員および旧職員</td>
+  </tr>
+</tbody></table>
+</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>第６条</td>
+        <td>本会に入会並に退会しようとする時はその旨を本会事務所に届出ねばならない。又会員で転居・改姓名・転住結婚等の場合はすぐその旨を本会事務所に通知する事とする。</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>第７条</td>
+        <td>本会員であって本会の名誉を毀損する行為のあった時は除名する事がある。</td>
+      </tr>
+      <tr align=""left"" valign=""top"" bgcolor=""#CCFFFF"">
+        <td>第３章</td>
+        <td>役員</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>第８条</td>
+        <td>本会に次の役員を置く。任期は３年とする。ただし再任は妨げない。
+          <table width=""480"" border=""0"" cellspacing=""0"" cellpadding=""4"">
+            <tbody><tr align=""left"" valign=""top"">
+              <td width=""90"">&nbsp;</td>
+              <td width=""55"">会　長</td>
+              <td width=""50"">１名</td>
+              <td width=""253"">理事会において正会員中から選出する。<br>
+                会長は会を代表し、会務を総括する。</td>
+            </tr>
+            <tr align=""left"" valign=""top"">
+              <td>&nbsp;</td>
+              <td>副会長</td>
+              <td>２名</td>
+              <td>理事会において正会員中から選出する。<br>
+                副会長は会長を補佐し会長に事故のある時は代行する。</td>
+            </tr>
+            <tr align=""left"" valign=""top"">
+              <td>&nbsp;</td>
+              <td>名誉会長</td>
+              <td>&nbsp;</td>
+              <td>母校の学校長を推薦する。</td>
+            </tr>
+            <tr align=""left"" valign=""top"">
+              <td>&nbsp;</td>
+              <td>顧　問</td>
+              <td>若干名</td>
+              <td>現職員を会長から委嘱する。会務の遂行上、会長の諮問に応じ母校との連絡・調整にあたる。</td>
+            </tr>
+            <tr align=""left"" valign=""top"">
+              <td>&nbsp;</td>
+              <td>幹　事</td>
+              <td>若干名</td>
+              <td>会員中から会長が委嘱する。</td>
+            </tr>
+            <tr align=""left"" valign=""top"">
+              <td>&nbsp;</td>
+              <td>会　計</td>
+              <td>２名</td>
+              <td>理事会において正会員中から選出する。</td>
+            </tr>
+            <tr align=""left"" valign=""top"">
+              <td>&nbsp;</td>
+              <td>会計監査</td>
+              <td>２名</td>
+              <td>理事会において正会員中から選出する。</td>
+            </tr>
+          </tbody></table></td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>第９条</td>
+        <td><table width=""480"" border=""0"" cellspacing=""0"" cellpadding=""0"">
+          <tbody><tr align=""left"" valign=""top"">
+            <td width=""55"">理　事</td>
+            <td width=""409"">回卒毎に若干名ずつ選出する。会務の処理に当り会員との連絡を図る。理事は会長の命によって会務の遂行を図る。<br>
+              委員は理事の指示によって会務の処理に当り会員との連絡を図る。</td>
+			  </tr>
+        </tbody></table></td>
+      </tr>
+      <tr align=""left"" valign=""top"" bgcolor=""#CCFFFF"">
+        <td>第４章</td>
+        <td>会務および機関</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>第10条</td>
+        <td>(会　務) 本会の目的達成の為に必要な緒活動を行う。</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>第11条</td>
+        <td>(総　会) 会員相互の親睦を図り、その向上の為理事会の決定によって総会を開く。</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>第12条</td>
+        <td>(理事会) 理事および役員で構成し、毎年１回開き会務の報告、役員の改選その他重要事項に関する決議をする。</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>第13条</td>
+        <td>(役員会) 適宜会長が召集し、予算、決算その他重要事項を協議する。</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>第14条</td>
+        <td>(その他） 会の目的のために必要な機関を設けることができる。</td>
+      </tr>
+      <tr align=""left"" valign=""top"" bgcolor=""#CCFFFF"">
+        <td>第５章</td>
+        <td>会計</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>第15条</td>
+        <td>本会の費用は会費および寄付金その他の収入で支弁する。<br>
+          正会員は会費として卒業時までに金8,000円を納入する。<br>
+          会費納入の方法は別に定める。</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>第16条</td>
+        <td>本会の会計年度は４月１日に始まり翌年３月31日に終る。</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>第17条</td>
+        <td>予算は毎年１月役員会の議決を経て決定する。<br>
+          決算は役員会および理事会に報告し承認を得る。</td>
+      </tr>
+      <tr align=""left"" valign=""top"" bgcolor=""#CCFFFF"">
+        <td>第６章</td>
+        <td>支部</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>第18条</td>
+        <td>東京都以外の地方に住する会員が数名に達した時は支部を設ける事ができる。</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>第19条</td>
+        <td>支部を設立しようとする時は支部規則を作り支部長を設けて会長の承認を受けなければならない。</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>第20条</td>
+        <td>支部の経費は支部の負担とする。但し本会から援助することもある。</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>第21条</td>
+        <td>支部において行った事項は支部長において適宜本会に報告することとする。</td>
+      </tr>
+      <tr align=""left"" valign=""top"" bgcolor=""#CCFFFF"">
+        <td>附則</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>第22条</td>
+        <td bgcolor=""#FFFFFF"">本会則の改正は理事会の議決による。</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody></table>",html
+fusoku,,若竹会（同窓会）における会員の個人情報の取扱いについての附則,"<table width=""562"" border=""0"" cellspacing=""0"" cellpadding=""4"">
+      <tbody><tr align=""left"" valign=""top"" bgcolor=""#CCFFCC"">
+        <td colspan=""2"">第１条（附則の目的）</td>
+        </tr>
+      <tr align=""left"" valign=""top"">
+        <td width=""90"">&nbsp;</td>
+        <td width=""456"">本附則は、若竹会会員の個人情報（以下「会員データ」と称する）の保護に関し、必要な事項を定めることにより、会員データの保護と、信頼される同窓会の実現を図ることを目的とする。</td>
+        </tr>
+      <tr align=""left"" valign=""top"" bgcolor=""#CCFFCC"">
+        <td colspan=""2"">第２条（会員データの定義と項目）</td>
+        </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td><p>会員データとは、若竹会事務局が管理している、会則に定める会員の情報をいう。<br>
+            また、管理する個人情報の項目は下記のとおりとする。<br>
+            ・氏名/卒業生(卒回)/現住所/現住所の連絡電話番号/勤務先名/勤務先の連絡電話番号）</p>
+          </td>
+      </tr>
+      <tr align=""left"" valign=""top"" bgcolor=""#CCFFCC"">
+        <td colspan=""2"">第３条（個人情報の利用目的）</td>
+        </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>若竹会は下記の目的に個人情報を利用するものとする。<br>
+          ・若竹会からの各種通信文書の発送（会誌、クラス会、同期会、支部会等を含む）<br>
+          ・会員名簿の作成<br>
+          ・その他、会則に定める事業の遂行に必要と判断される諸事業</td>
+      </tr>
+      <tr align=""left"" valign=""top"" bgcolor=""#CCFFCC"">
+        <td colspan=""2"">第４条（会員データ管理責任者の設置）</td>
+        </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>若竹会は会員データを厳格適正に維持管理し、会員の個人情報の安全保護を図るため若竹会事務局内に「会員データ管理責任者」を置く。</td>
+      </tr>
+      <tr align=""left"" valign=""top"" bgcolor=""#CCFFCC"">
+        <td colspan=""2"">第５条（管理者の責務）</td>
+        </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>若竹会事務局は、同窓会の目的に即した事業の遂行にあたり知り得た会員データをみだりにに第三者に漏らしたり、第３条の利用目的以外に使用してはならない。<br>
+          また、管理責任者は、会員データを常に最新・正確なものに保つよう努めるものとする。</td>
+      </tr>
+      <tr align=""left"" valign=""top"" bgcolor=""#CCFFCC"">
+        <td colspan=""2"">第６条（会員の責務）</td>
+        </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>若竹会会員は、相互に個人情報の重要性を認識し、会員データは会員個人の利用目的の範囲を超えてはならず、また、第三者へ会員名簿及び会員データを提供してはならない。</td>
+      </tr>
+      <tr align=""left"" valign=""top"" bgcolor=""#CCFFCC"">
+        <td colspan=""2"">第７条（会員データの利用申請）</td>
+        </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>若竹会会員が会員相互の親睦を深め、または同窓会活動を活性化するために同期会、クラス会、支部会、ＯＢ会等を開催するにあたり、若竹会事務局を通して会員データを改めて取得しようとする時には、「会員データ管理責任者」に対して、所定の利用申請書により申し込まなければならない。</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td colspan=""2"" bgcolor=""#CCFFCC"">第８条（会員データの提供拒否）</td>
+        </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>会員データ管理責任者は、会員データの利用申込にみ対し、不正な利用が疑われ、または適正な利用が妨げられると判断した場合は、利用申請者に対し会員データの提供を拒否することができる。</td>
+      </tr>
+      <tr align=""left"" valign=""top"" bgcolor=""#CCFFFF"">
+        <td colspan=""2"" bgcolor=""#CCFFCC"">第９条（会員データの利用状況報告）</td>
+        </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td bgcolor=""#FFFFFF"">会員データ管理責任者は、随時、若竹会役員会に会員データの提供・利用状況を報告しなければならない。</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td colspan=""2"" bgcolor=""#CCFFCC"">第10条（自己情報の開示及び訂正、消去の請求）</td>
+        </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>若竹会会員は、自己の会員データについて、いつでも開示の請求ができる。会員データ管理責任者は、請求者が本人であることを確認の上、開示請求に対応するものとする。また、自己の会員データに誤りがある場合は、若竹会事務局に訂正または消去の請求ができるものとする。</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td colspan=""2"" bgcolor=""#CCFFCC"">第11条（附則の変更）</td>
+        </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>若竹会会員の個人情報保護のために、上記以外の定めが必要な場合、または変更の必要がある場合は、若竹会役員会にて協議し、若竹会理事会にて決定する。</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td colspan=""2"" bgcolor=""#CCFFCC"">制定・施行</td>
+        </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>平成18年５月13日制定　この附則は平成18年７月１日から施行する。</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody></table>",html
+meibo,,若竹会役員　及び　幹事　名簿　2012.05.28現在,"<table width=""562"" border=""0"" cellspacing=""0"" cellpadding=""4"">
+      <tbody><tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td width=""120"">&nbsp;</td>
+        <td width=""90"">名誉会長</td>
+        <td width=""100"">久永　哲雄</td>
+        <td width=""70"">現総括校長</td>
+        <td width=""142"">&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>会　　長</td>
+        <td>須知　正度</td>
+        <td>高１８</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>副 会 長</td>
+        <td>小森　杜喜子</td>
+        <td>高１８</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>同</td>
+        <td>中山　修</td>
+        <td>高１９</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>会　  計</td>
+        <td>前田　和子</td>
+        <td>高１８</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>同</td>
+        <td>中山　光</td>
+        <td>高４９</td>
+        <td>現職、H24.4着任</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>会計監査</td>
+        <td>秋元　公彦</td>
+        <td>高２４</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>同</td>
+        <td>落合　惠子</td>
+        <td>高２７</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>幹　事</td>
+        <td>森本　静子</td>
+        <td>本２４</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>谷畑　充</td>
+        <td>高９</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>金森　克之</td>
+        <td>高１６</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>小菅　俊明</td>
+        <td>高１６</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>相川　浩之</td>
+        <td>高２７</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>吉田　裕之</td>
+        <td>高３２</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>大島　加奈子</td>
+        <td>高３９</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>小沼　史彦</td>
+        <td>高３９</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>加藤　拓磨</td>
+        <td>高５０</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody></table>",html
+history,,沿革,"<table width=""562"" border=""0"" cellspacing=""0"" cellpadding=""4"">
+      <tbody><tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td width=""120"">&nbsp;</td>
+        <td width=""90"">名誉会長</td>
+        <td width=""100"">久永　哲雄</td>
+        <td width=""70"">現総括校長</td>
+        <td width=""142"">&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>会　　長</td>
+        <td>須知　正度</td>
+        <td>高１８</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>副 会 長</td>
+        <td>小森　杜喜子</td>
+        <td>高１８</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>同</td>
+        <td>中山　修</td>
+        <td>高１９</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>会　  計</td>
+        <td>前田　和子</td>
+        <td>高１８</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>同</td>
+        <td>中山　光</td>
+        <td>高４９</td>
+        <td>現職、H24.4着任</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>会計監査</td>
+        <td>秋元　公彦</td>
+        <td>高２４</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>同</td>
+        <td>落合　惠子</td>
+        <td>高２７</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>幹　事</td>
+        <td>森本　静子</td>
+        <td>本２４</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>谷畑　充</td>
+        <td>高９</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>金森　克之</td>
+        <td>高１６</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>小菅　俊明</td>
+        <td>高１６</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>相川　浩之</td>
+        <td>高２７</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>吉田　裕之</td>
+        <td>高３２</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>大島　加奈子</td>
+        <td>高３９</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>小沼　史彦</td>
+        <td>高３９</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>加藤　拓磨</td>
+        <td>高５０</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr align=""left"" valign=""top"">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody></table>",html
 link,, リンク集（リンクのお申し込みに際しましてはリンクに関する基準を参照ください）,"<table width=""500"" border=""0"" cellspacing=""0"" cellpadding=""8"" style: ""margin: 0 auto;"">
   <tbody><tr bgcolor=""#FFFFCC"">
     <td colspan=""2"" align=""center"" valign=""middle"">バナーをクリックすると新しいウインドウが開き、リンク先のホームページが表示されます</td>
