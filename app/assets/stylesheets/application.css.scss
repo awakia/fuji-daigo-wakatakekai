@@ -71,7 +71,10 @@ textarea {
     background-color: #FDD;
   }
   .content {
-    padding: 10px 4px;
+    padding: 10px 4px 10px 10px;
+    .monospace {
+      font-family: monospace;
+    }
   }
 }
 
