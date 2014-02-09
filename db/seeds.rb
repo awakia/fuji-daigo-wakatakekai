@@ -8,6 +8,8 @@
 
 require 'csv'
 
+default_published_at = 1.years.ago.to_datetime
+
 filename = Rails.root.join('db', 'seeds.csv')
 CSV.open(filename, headers: true).each do |row|
   p = Post.where(path: row['path'], title: row['title']).first_or_initialize
@@ -15,5 +17,7 @@ CSV.open(filename, headers: true).each do |row|
     p.send("#{x}=", row[x]) if row[x].present?
   end
   p.format_cd = Post.formats(row['format']).to_i if row['format'].present?
+  p.published_at = default_published_at
+  default_published_at -= 1.day
   p.save!
 end

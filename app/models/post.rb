@@ -38,7 +38,7 @@ class Post < ActiveRecord::Base
     end
 
     def set_published_at
-      self.published_at = Time.now unless @set_draft
+      self.published_at ||= Time.now unless @set_draft
     end
 
     def nl2br(str)
