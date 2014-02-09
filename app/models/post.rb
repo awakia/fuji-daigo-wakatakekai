@@ -2,6 +2,8 @@ class Post < ActiveRecord::Base
   before_save :set_draft
   before_create :set_published_at
 
+  validates_uniqueness_of :hash_name, scope: :path, allow_nil: true, allow_blank: true
+
   scope :published, -> {
     where(Post.arel_table[:published_at].not_eq(nil))
   }
