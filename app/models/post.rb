@@ -4,6 +4,9 @@ class Post < ActiveRecord::Base
 
   validates_uniqueness_of :hash_name, scope: :path, allow_nil: true, allow_blank: true
 
+  FORMATS = [:text, :html]
+  as_enum :format, FORMATS, prefix: true
+
   scope :published, -> {
     where(Post.arel_table[:published_at].not_eq(nil))
   }

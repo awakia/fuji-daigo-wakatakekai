@@ -5,6 +5,7 @@ class CreatePosts < ActiveRecord::Migration
       t.string :hash_name
       t.string :title
       t.text :content
+      t.integer :format_cd, null: false, default: 0
       t.datetime :published_at
 
       t.timestamps
