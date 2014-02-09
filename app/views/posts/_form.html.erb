@@ -24,14 +24,18 @@
     <%= f.text_area :content, style: "width: 500px; height: 250px;" %>
   </div>
   <div class="field">
-    <%= f.check_box :draft %>
-    <%= f.label :draft, "下書きとして保存" %><br>
+    <%= f.check_box :format_cd %>
+    <%= f.label :format_cd, "HTML形式で入力" %><br>
   </div>
   <div class="field", id="published_at_field">
     <%= f.label :published_at, "投稿日時(投稿順に関係)" %><br>
     <%= f.datetime_select :published_at, use_month_numbers: true %>
   </div>
 
+  <div class="field">
+    <%= f.check_box :draft %>
+    <%= f.label :draft, "下書きとして保存" %><br>
+  </div>
   <div class="actions">
     <%= f.submit "反映" %>
   </div>
