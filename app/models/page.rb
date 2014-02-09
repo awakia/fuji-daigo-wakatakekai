@@ -26,6 +26,8 @@ class Page
   def self.all
     @@all ||= [
       Page.new(path: :root, title: 'トップページ'),
+      Page.new(path: :root_side, title: 'トップページ右側'),
+      Page.new(path: :root_top, title: 'ご案内'),
       Page.new(path: :greeting, title: 'HP開設にあたり'),
       Page.new(path: :about_us, title: '若竹会について'),
       Page.new(path: :kaisoku, title: '会則', parent: :about_us),
@@ -34,7 +36,7 @@ class Page
       Page.new(path: :history, title: '沿革', parent: :about_us),
       Page.new(path: :letter, title: '役員会だより'),
       Page.new(path: :info, title: '事務局からのお知らせ'),
-      Page.new(path: :w_new, title: "更新履歴<br>(What's New)"),
+      Page.new(path: :whats_new, title: "更新履歴<br>(What's New)"),
       Page.new(path: :archive, title: 'アーカイブ'),
       Page.new(path: :magazine, title: '会報「若竹」', parent: :archive),
       Page.new(path: :anniv_mag, title: '富士高編集<br>記念誌', parent: :archive),
@@ -44,5 +46,9 @@ class Page
       Page.new(path: :form, title: '事務局への<br>連絡フォーム'),
       Page.new(path: :ucontact, title: '会員連絡先変更届'),
     ]
+  end
+
+  def self.for_sidebar
+    all.reject { |page| page.path.in? [:root_side, :root_top] }
   end
 end

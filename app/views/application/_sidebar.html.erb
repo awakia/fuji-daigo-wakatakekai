@@ -1,6 +1,6 @@
 <div id="side">
 <ul>
-<% Page.all.each do |page| %>
+<% Page.for_sidebar.each do |page| %>
   <%= side_link_to page %>
 <% end %>
 </ul>

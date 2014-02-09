@@ -3,13 +3,20 @@ class PagesController < ApplicationController
 
   Page.all.map(&:path).each do |page|
     define_method page do
-      # do noting
+      render :posts
     end
+  end
+
+  def root
+    @posts =
+      Post.published.where(path: :root_top).order(:published_at).reverse_order.all +
+      Post.published.where(path: :whats_new).order(:published_at).reverse_order.all +
+      @posts
+    @side_posts = Post.published.where(path: params[:action]).order(:published_at).reverse_order
   end
 
   private
     def render_page
       @posts = Post.published.where(path: params[:action]).order(:published_at).reverse_order
-      render :posts
     end
 end
