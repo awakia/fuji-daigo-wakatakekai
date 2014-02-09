@@ -21,6 +21,14 @@ class Post < ActiveRecord::Base
     published_at == nil
   end
 
+  def processed_content
+    if format_text?
+      nl2br content
+    else
+      content.to_s.html_safe
+    end
+  end
+
   private
     def set_draft
       if @set_draft
@@ -31,5 +39,11 @@ class Post < ActiveRecord::Base
 
     def set_published_at
       self.published_at = Time.now unless @set_draft
+    end
+
+    def nl2br(str)
+      return ''.html_safe if str.blank?
+      str = str.split(/\r\n|\n\r|\r|\n/o).map {|line| line }.join('<br>')
+      str.html_safe
     end
 end

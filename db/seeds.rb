@@ -14,5 +14,6 @@ CSV.open(filename, headers: true).each do |row|
   ['hash_name', 'content'].each do |x|
     p.send("#{x}=", row[x]) if row[x].present?
   end
+  p.format_cd = Post.formats(row['format']).to_i if row['format'].present?
   p.save!
 end

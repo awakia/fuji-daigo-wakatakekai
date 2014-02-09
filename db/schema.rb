@@ -15,8 +15,10 @@ ActiveRecord::Schema.define(version: 20130825100016) do
 
   create_table "posts", force: true do |t|
     t.string   "path"
+    t.string   "hash_name"
     t.string   "title"
     t.text     "content"
+    t.integer  "format_cd",    default: 0, null: false
     t.datetime "published_at"
     t.datetime "created_at"
     t.datetime "updated_at"
