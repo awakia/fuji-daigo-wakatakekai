@@ -1,4 +1,6 @@
 FujiDaigoWakatakekai::Application.routes.draw do
+  resources :uploads
+
   resources :posts
 
   root to: "pages#root"
