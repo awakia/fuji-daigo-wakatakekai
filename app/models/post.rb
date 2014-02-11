@@ -4,6 +4,8 @@ class Post < ActiveRecord::Base
 
   validates_uniqueness_of :hash_name, scope: :path, allow_nil: true, allow_blank: true
 
+  has_many :uploads
+
   FORMATS = [:text, :html]
   as_enum :format, FORMATS, prefix: true
 
