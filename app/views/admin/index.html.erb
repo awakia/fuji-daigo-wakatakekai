@@ -2,6 +2,9 @@
 <h2>管理者用ページ</h2>
 <div class="content">
   <%= button_to '各ページから編集できるようにする', become_admin_admin_index_path %>
-  <%= link_to '投稿管理', posts_path %>
+  <ul style="margin-top: 10px">
+    <li><%= link_to '投稿管理', posts_path %></li>
+    <li><%= link_to 'アップロードしたファイル一覧', uploads_path %></li>
+  </ul>
 </div>
 </div>
