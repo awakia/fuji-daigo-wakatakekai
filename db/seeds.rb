@@ -10,7 +10,10 @@ require 'csv'
 
 default_published_at = 1.years.ago.to_datetime
 
-filename = Rails.root.join('db', 'seeds.csv')
+#
+# POSTS
+#
+filename = Rails.root.join('db', 'posts.csv')
 CSV.open(filename, headers: true).each do |row|
   p = Post.where(path: row['path'], title: row['title']).first_or_initialize
   ['hash_name', 'content'].each do |x|
@@ -20,4 +23,14 @@ CSV.open(filename, headers: true).each do |row|
   p.published_at = default_published_at
   default_published_at -= 1.day
   p.save!
+end
+
+#
+# UPLOADS
+#
+filename = Rails.root.join('db', 'uploads.csv')
+CSV.open(filename, headers: true).each do |row|
+  u = Upload.where(category: row['category'], post_id: row['post_id'], name: row['name']).first_or_initialize
+  u.url = row['url']
+  u.save!
 end
