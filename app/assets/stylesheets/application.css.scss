@@ -46,6 +46,12 @@ textarea {
   resize: vertical;
 }
 
+#header {
+  img {
+    display: block;
+  }
+}
+
 #wrapper {
   margin: auto;
   width: 720px;
