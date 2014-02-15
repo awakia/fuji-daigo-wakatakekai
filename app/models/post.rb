@@ -23,11 +23,28 @@ class Post < ActiveRecord::Base
     published_at == nil
   end
 
+  def parsed_content
+    unless @parsed_content
+      @parsed_content = ""
+      segments = content.split /(\[\[.*?\]\])/
+      segments.each do |seg|
+        matched = seg.match /\[\[(.*?)(?:\((\d+),(\d+)\))?\]\]/
+        if matched && (upload = Upload.get(matched[1]))
+          size_condition = matched[2] && matched[3] ? " width='#{matched[2]}px' height='#{matched[3]}px'" : ""
+          @parsed_content += "<img class='content-image' src='#{upload.url}'#{size_condition}>"
+        else
+          @parsed_content += seg
+        end
+      end
+    end
+    @parsed_content
+  end
+
   def processed_content
     if format_text?
-      nl2br content
+      nl2br parsed_content
     else
-      content.to_s.html_safe
+      parsed_content.to_s.html_safe
     end
   end
 
