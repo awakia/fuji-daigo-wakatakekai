@@ -1,3 +1,9 @@
+このページは管理者のみ閲覧可能な個々の投稿のページです。
+<% if Page.find(@post.path).present? %>
+  <br>
+  「<%= link_to Page.find(@post.path).title.gsub('<br>',''), pages_path(@post.path) %>」へ行く
+<% end %>
+
 <%= render partial: 'post', object: @post %>
 
 <%= link_to '一覧に戻る', posts_path %>
