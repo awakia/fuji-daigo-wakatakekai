@@ -32,6 +32,6 @@ filename = Rails.root.join('db', 'uploads.csv')
 CSV.open(filename, headers: true).each do |row|
   u = Upload.where(category: row['category'], name: row['name']).first_or_initialize
   u.url = row['url']
-  u.post = Post.where(name: row['post_name']).first if row['post_name'].present?
+  u.post = Post.where(title: row['post_title']).first if row['post_title'].present?
   u.save!
 end
