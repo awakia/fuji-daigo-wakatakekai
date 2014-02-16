@@ -1,9 +1,15 @@
 class PagesController < ApplicationController
   before_action :render_page
 
-  Page.all.map(&:path).each do |page|
-    define_method page do
-      render :posts
+  Page.all.each do |page|
+    if page.within.present?
+      define_method page.path do
+        redirect_to page.within
+      end
+    else
+      define_method page.path do
+        render :posts
+      end
     end
   end
 

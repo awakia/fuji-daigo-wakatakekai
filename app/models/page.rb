@@ -1,10 +1,11 @@
 class Page
-  attr_accessor :path, :title, :parent
+  attr_accessor :path, :title, :parent, :within
 
-  def initialize(path: nil, title: nil, parent: nil)
+  def initialize(path: nil, title: nil, parent: nil, within: nil)
     @path = path
     @title = title
     @parent = parent
+    @within = within
   end
 
   def path
@@ -20,14 +21,14 @@ class Page
   end
 
   def self.find(path)
-    self.all.find { |x| x.path == path }
+    self.all.find { |x| x.path.to_s == path.to_s }
   end
 
   def self.all
     @@all ||= [
       Page.new(path: :root, title: 'トップページ'),
-      Page.new(path: :root_side, title: 'トップページ右側'),
-      Page.new(path: :root_top, title: 'ご案内'),
+      Page.new(path: :root_side, title: 'トップページ(右側)', within: :root),
+      Page.new(path: :root_top, title: 'トップページ(上部)', within: :root),
       Page.new(path: :greeting, title: 'HP開設にあたり'),
       Page.new(path: :about_us, title: '若竹会について'),
       Page.new(path: :kaisoku, title: '会則', parent: :about_us),
@@ -49,6 +50,6 @@ class Page
   end
 
   def self.for_sidebar
-    all.reject { |page| page.path.in? [:root_side, :root_top] }
+    all.reject { |page| page.within.present? }
   end
 end
