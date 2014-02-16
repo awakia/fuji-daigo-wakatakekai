@@ -30,7 +30,8 @@ end
 #
 filename = Rails.root.join('db', 'uploads.csv')
 CSV.open(filename, headers: true).each do |row|
-  u = Upload.where(category: row['category'], post_id: row['post_id'], name: row['name']).first_or_initialize
+  u = Upload.where(category: row['category'], name: row['name']).first_or_initialize
   u.url = row['url']
+  u.post = Post.where(name: row['post_name']).first if row['post_name'].present?
   u.save!
 end
