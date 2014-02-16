@@ -23,6 +23,10 @@ class Post < ActiveRecord::Base
     published_at == nil
   end
 
+  def draft?
+    draft
+  end
+
   def parsed_content
     unless @parsed_content
       @parsed_content = ""
