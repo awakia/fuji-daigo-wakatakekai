@@ -76,13 +76,13 @@ whats_new,whats_new, 更新履歴,"<div class=""monospace"">2013/11/26　「事�
 greeting,,役員会より,[[greeting.jpg]],
 about_us,,若竹会について,"<table width=""562"" border=""0"" cellspacing=""0"" cellpadding=""4"">
   <tbody><tr align=""center"">
-    <td>[[kaisoku_icon.jpg(128,128)]]</a></td>
-    <td>[[fusoku_icon.jpg(128,128)]]</td>
-    <td>[[meibo_icon.jpg(128,128)]]</td>
+    <td><a href=""kaisoku"">[[kaisoku_icon.jpg(128,128):nolink]]</a></td>
+    <td><a href=""fusoku"">[[fusoku_icon.jpg(128,128):nolink]]</a></td>
+    <td><a href=""meibo"">[[meibo_icon.jpg(128,128):nolink]]</a></td>
   </tr>
   <tr align=""center"">
     <td>&nbsp;</td>
-    <td>[[history_icon.jpg(128,128)]]</td>
+    <td><a href=""history"">[[history_icon.jpg(128,128):nolink]]</a></td>
     <td>&nbsp;</td>
   </tr>
 </tbody></table>",html
@@ -1682,12 +1682,12 @@ info,,［2010/1/28］,"本日１月２８日（金）に名簿作成の為の事
 会員の皆様のお手元には、順次届く予定です。 ",
 archive,,アーカイブ,"<table width=""562"" border=""0"" cellspacing=""0"" cellpadding=""4"">
   <tbody><tr align=""center"">
-    <td>[[magazine_icon.jpg(128,128)]]</td>
-    <td>[[anniv_mag_icon.jpg(128,128]]</td>
-    <td>[[song_icon.jpg(128,128)]]</td>
+    <td><a href=""magazine"">[[magazine_icon.jpg(128,128):nolink]]</a></td>
+    <td><a href=""anniv_mag"">[[anniv_mag_icon.jpg(128,128:nolink]]</a></td>
+    <td><a href=""song"">[[song_icon.jpg(128,128):nolink]]</a></td>
   </tr>
   <tr align=""center"">
-    <td>[[photo_album_icon.jpg(128,128)]]</td>
+    <td><a href=""photo_album"">[[photo_album_icon.jpg(128,128):nolink]]</a></td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
