@@ -104,11 +104,17 @@ textarea {
 #left-content {
   float: left;
   width: 414px;
+  .content-image {
+    max-width: 382px;
+  }
 }
 
 #right-content {
   float: right;
   width: 162px;
+  .content-image {
+    max-width: 130px;
+  }
 }
 
 #side {
