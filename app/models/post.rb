@@ -42,9 +42,9 @@ class Post < ActiveRecord::Base
           size_condition = matched[2] && matched[3] ? " width='#{matched[2]}px' height='#{matched[3]}px'" : ""
           image = ''
           if matched[4] == ':square'
-            image = "<a href='upload.url'>■</a>"
+            image = "<a href='#{upload.url}'>■</a>"
           elsif matched[4] == ':link'
-            image = "<a href='upload.url'>#{upload.filename}</a>"
+            image = "<a href='#{upload.url}'>#{upload.filename}</a>"
           else
             image_url = matched[5] == ':thumb' ? upload.thumb_url : upload.url
             image = "<img class='content-image' src='#{image_url}'#{size_condition}>"
