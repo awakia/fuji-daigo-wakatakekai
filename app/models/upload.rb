@@ -1,9 +1,14 @@
 class Upload < ActiveRecord::Base
   belongs_to :post
   mount_uploader :file, FileUploader
+  before_save :set_info
 
   def image_type?
     file && file.content_type.start_with?('image')
+  end
+
+  def filename
+    file ? file.file.filename : nil
   end
 
   def url
@@ -11,7 +16,7 @@ class Upload < ActiveRecord::Base
   end
 
   def thumb_url
-    file ? file.thumb.url || file.url : nil
+    file ? (file.thumb.present? ? file.thumb.url : file.url) : nil
   end
 
   def self.get(name, category: nil)
@@ -23,5 +28,10 @@ class Upload < ActiveRecord::Base
 
   def self.get_url(name, category: nil)
     get(name, category: category).try(:url)
+  end
+
+  def set_info
+    self.name = filename if name.blank?
+    self.category = post.path if category.blank? && post.present?
   end
 end
