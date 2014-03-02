@@ -8,6 +8,7 @@ class PagesController < ApplicationController
       end
     else
       define_method page.path do
+        @title = "若竹会・" + page.title
         render :posts
       end
     end
