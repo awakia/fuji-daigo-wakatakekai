@@ -25,13 +25,26 @@ CSV.open(filename, headers: true).each do |row|
   p.save!
 end
 
-# #
-# # UPLOADS
-# #
-# filename = Rails.root.join('db', 'uploads.csv')
-# CSV.open(filename, headers: true).each do |row|
-#   u = Upload.where(category: row['category'], name: row['name']).first_or_initialize
-#   u.url = row['url']
-#   u.post = Post.where(title: row['post_title']).first if row['post_title'].present?
-#   u.save!
-# end
+#
+# UPLOADS
+#
+filename = Rails.root.join('db', 'uploads.csv')
+CSV.open(filename, headers: true).each do |row|
+  u = Upload.where(category: row['category'], name: row['name']).first_or_initialize
+  u.file = row['file']
+  u.save!
+end
+
+#
+# UPLOAD-POST RELATIONS
+#
+Post.all.each do |post|
+  segments = post.content.split /(\[\[.*?\]\])/
+  segments.each do |seg|
+    matched = seg.match /\[\[(.*?)(?:\((\d+),(\d+)\))?(:nolink|:link|:square)?(:thumb)?\]\]/i
+    if matched && (upload = Upload.get(matched[1]))
+      upload.post = post
+      upload.save!
+    end
+  end
+end
