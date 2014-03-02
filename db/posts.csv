@@ -2129,3 +2129,44 @@ magazine,,会報「若竹」バックナンバー　　最終更新：2013/02/09
   </tr>
 </table>
 ",html
+anniv_mag,,富士高編集記念誌,"閲覧する場合は■をクリックしてください。<br>
+全文はPDF形式で保存されています。（表示にはパソコンが適切に設定されていることが必要です）<br>
+全文をダウンロードする場合は■を右クリックし、ポップアップメニューから「対象をファイルに保存」を選んでください。<br>
+<br>
+<table width=""562"" border=""1"" cellspacing=""0"" cellpadding=""4"">
+  <tr bgcolor=""#99CCFF"">
+    <td width=""280"" align=""left"">タイトル</td>
+    <td width=""80"" align=""center"">発行日</td>
+    <td width=""50"" align=""center"">表紙</td>
+    <td width=""50"" align=""center"">目次</td>
+    <td width=""50"" align=""center"">全文</td>
+  </tr>
+  <tr>
+    <td align=""left"">創立九十周年記念誌</td>
+    <td align=""center"">2010.11.9</td>
+    <td align=""center"">[[AC_090.jpg:square]]</td>
+    <td align=""center"">[[AI_090.jpg:square]]</td>
+    <td align=""center"">[[AN_090.pdf:square]]</td>
+  </tr>
+  <tr>
+    <td align=""left"">創立八十周年記念誌</td>
+    <td align=""center"">2001.9.29</td>
+    <td align=""center"">[[AC_080.jpg:square]]</td>
+    <td align=""center"">[[AI_080.jpg:square]]</td>
+    <td align=""center"">&nbsp;</a></td>
+  </tr>
+  <tr>
+    <td align=""left"">創立七十周年記念誌</td>
+    <td align=""center"">1991.11.2</td>
+    <td align=""center"">[[AC_070.jpg:square]]</td>
+    <td align=""center"">[[AI_070.jpg:square]]</td>
+    <td align=""center"">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align=""left"">創立六十周年記念誌</td>
+    <td align=""center"">1981.1.25</td>
+    <td align=""center"">[[AC_060.jpg:square]]</td>
+    <td align=""center"">[[AI_060.jpg:square]]</td>
+    <td align=""center"">&nbsp;</td>
+  </tr>
+</table>",html
