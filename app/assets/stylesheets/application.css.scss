@@ -71,6 +71,18 @@ ul {
   padding: 0;
 }
 
+a {
+  color: #040;
+  font-style: normal;
+  text-decoration: underline;
+  &:hover {
+    color: #f00
+  }
+  &:active {
+    text-decoration:none;
+  }
+}
+
 textarea {
   resize: vertical;
 }
@@ -149,10 +161,6 @@ textarea {
 
   ul {
     display: block;
-    a {
-      text-decoration: underline;
-      color: #040;
-    }
     li {
       margin: 4px;
       padding: 4px;
