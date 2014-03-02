@@ -2,7 +2,7 @@
 <div class="sub-head clearfix">
   <h2 class="left"><%= @upload.name %></h2>
   <% if cookies[:role] == 'fdw' %>
-    <%= link_to "編集", edit_upload_path(post), class: "right" %>
+    <%= link_to "編集", edit_upload_path(@upload), class: "right" %>
   <% end %>
 </div>
 <div class="content">
