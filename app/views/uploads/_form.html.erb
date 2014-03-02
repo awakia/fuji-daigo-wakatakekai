@@ -29,8 +29,8 @@
   <div class="field">
     <% if @upload.url.present? %>
       <% if @upload.image_type? %>
-        <%= link_to @upload.url, target: "_blank" do %>
-          <div id="thumb-image" class="img-contain" style="background-image: url('<%= @upload.thumb_url %>'); width: 200px; height: 200px;"></div>
+        <%= link_to @upload.url, target: "_blank", id: "thumb-image" do %>
+          <%= image_tag @upload.thumb_url %>
         <% end %>
       <% else %>
         <%= link_to @upload.filename, @upload.url, target: "_blank" %>
