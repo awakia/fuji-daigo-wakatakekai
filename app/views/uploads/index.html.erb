@@ -16,7 +16,7 @@
       <tr>
         <td><%= upload.category %></td>
         <td><%= upload.post_id.present? ? link_to(upload.post.title.truncate, post_url(upload.post)) : "-" %></td>
-        <td><%= link_to upload.name, upload_path(upload) %></td>
+        <td><%= link_to upload.name, edit_upload_path(upload) %></td>
         <td><%= button_to '削除', upload, method: :delete, data: { confirm: '本当に削除してよろしいですか？' } %></td>
       </tr>
     <% end %>

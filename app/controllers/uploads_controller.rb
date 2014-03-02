@@ -29,7 +29,7 @@ class UploadsController < ApplicationController
 
     respond_to do |format|
       if @upload.save
-        format.html { redirect_to @upload, notice: 'Upload was successfully created.' }
+        format.html { redirect_to @upload, notice: 'ファイルが正常にアップロードされました' }
         format.json { render action: 'show', status: :created, location: @upload }
       else
         format.html { render action: 'new' }
@@ -43,7 +43,7 @@ class UploadsController < ApplicationController
   def update
     respond_to do |format|
       if @upload.update(upload_params)
-        format.html { redirect_to @upload, notice: 'Upload was successfully updated.' }
+        format.html { redirect_to @upload, notice: 'ファイルが正常に更新されました' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }

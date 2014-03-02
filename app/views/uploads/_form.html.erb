@@ -11,16 +11,19 @@
     </div>
   <% end %>
 
+  <%= f.hidden_field :post_id %>
+  <% if @upload.post.present? %>
+    <div class="field">
+      以下のページから投稿<br>
+      <%= link_to @upload.post.title, post_path(@upload.post) %>
+    </div>
+  <% end %>
   <div class="field">
-    <%= f.label :post %><br>
-    <%= f.text_field :post %>
-  </div>
-  <div class="field">
-    <%= f.label :category %><br>
+    <%= f.label :category, "カテゴリ" %><br>
     <%= f.text_field :category %>
   </div>
   <div class="field">
-    <%= f.label :name %><br>
+    <%= f.label :name, "投稿からの参照名" %><br>
     <%= f.text_field :name %>
   </div>
   <div class="field">
