@@ -5,7 +5,7 @@ root,,校舎写真,"<div class=""center"">
 [[M_F01.jpg(109,80):thumb]]&nbsp;
 [[M_S01.jpg(107,80):thumb]]
 </div>",html
-root_side,,2014/3/29 都立富士高校・付属中学校管弦楽部　第47回 定期演奏会 開催のお知らせ,[[20140329at.jpg:thumb]],
+root_side,,2014/3/29 都立富士高校・付属中学校管弦楽部　第47回 定期演奏会 開催のお知らせ,[[20140329a.jpg:thumb]],
 root_side,,9月14、15日　第61回富士祭が開催されました。,"[[20130914a.jpg:thumb]]
 [[20130914b.jpg:thumb]]
 [[20130914c.jpg:thumb]]
@@ -88,7 +88,7 @@ whats_new,whats_new,更新履歴,"<div class=""monospace"">2014/02/24　トッ�
 2009/12/08　事務局からのお知らせをリニューアルしました
 2009/11/03　アーカイブに会報「若竹」３７号を掲載しました
 2009/10/15　ホームページ正式開設しました</div>",
-greeting,,役員会より,[[greeting.jpg]],
+greeting,,役員会より,"<div class=""center"">[[greeting.jpg]]</div>",
 about_us,,若竹会について,"<table width=""562"" border=""0"" cellspacing=""0"" cellpadding=""4"">
   <tbody><tr align=""center"">
     <td><a href=""kaisoku"">[[kaisoku_icon.jpg(128,128):nolink]]</a></td>
@@ -1712,24 +1712,24 @@ link,, リンク集（リンクのお申し込みに際しましてはリンク�
     <td colspan=""2"" align=""center"" valign=""middle"">バナーをクリックすると新しいウインドウが開き、リンク先のホームページが表示されます</td>
     </tr>
   <tr>
-    <td width=""280"" align=""center"" valign=""middle""><a href=""http://www.fuji-h.metro.tokyo.jp/"" target=""_blank""><img src=""banner_fuji-j.jpg"" width=""200"" height=""40"" border=""0""></a></td>
+    <td width=""280"" align=""center"" valign=""middle""><a href=""http://www.fuji-h.metro.tokyo.jp/"" target=""_blank"">[[banner_fuji-j.jpg(200,40):nolink]]</a></td>
     <td width=""204"" align=""center"" valign=""middle"">東京都立富士高等学校</td>
   </tr>
   <tr>
-    <td width=""280"" align=""center"" valign=""middle""><a href=""http://fac.coolsite.co.jp/"" target=""_blank""><img src=""banner_FAC.jpg"" width=""200"" height=""40"" border=""0""></a></td>
+    <td width=""280"" align=""center"" valign=""middle""><a href=""http://fac.coolsite.co.jp/"" target=""_blank"">[[banner_FAC.jpg(200,40):nolink]]</td>
     <td align=""center"" valign=""middle"">富士高山岳部ＯＢ会</td>
   </tr>
   <tr>
-    <td align=""center"" valign=""middle""><a href=""http://4.pro.tok2.com/~fujiko1975/"" target=""_blank""><img src=""banner_F1975net.gif"" width=""200"" height=""40"" border=""0""></a></td>
+    <td align=""center"" valign=""middle""><a href=""http://4.pro.tok2.com/~fujiko1975/"" target=""_blank""><img src=""banner_F1975net.gif:nolink]]</a></td>
     <td align=""center"" valign=""middle"">都立富士高校<br>
       昭和50年卒ホームページ</td>
   </tr>
   <tr>
-    <td align=""center"" valign=""middle""><a href=""http://www.aoi-save.com/index.php"" target=""_blank""><img src=""banner_aoi-save.jpg"" width=""205"" height=""80"" border=""0""></a></td>
+    <td align=""center"" valign=""middle""><a href=""http://www.aoi-save.com/index.php"" target=""_blank"">[[banner_aoi-save.jpg:nolink]]</a></td>
     <td align=""center"" valign=""middle"">あおいちゃんを救う会</td>
   </tr>
   <tr>
-    <td align=""center"" valign=""middle""><a href=""http://fuji.sppd.ne.jp/blog/"" target=""_blank""><img src=""banner_1971.jpg"" width=""200"" height=""40"" border=""0""></a></td>
+    <td align=""center"" valign=""middle""><a href=""http://fuji.sppd.ne.jp/blog/"" target=""_blank"">[[banner_1971.jpg:nolink]]</a></td>
     <td align=""center"" valign=""middle"">富士高1971年（昭和46年）卒<br>
       毎日書き手が変わるデイリーブログ</td>
   </tr>

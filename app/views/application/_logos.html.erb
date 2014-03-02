@@ -2,21 +2,21 @@
   <div class="column left" style="width: 129px; margin: 10px 0 10px 4px;">
     <h2 class="sub-head center">府立<br>第五高等女学校<br>校章</h2>
     <div class="content center">
-    <img src="http://www.fuji-daigo-wakatakekai.org/top/SM_00B.jpg">
+    <img src="<%= Upload.get('SM_00B.jpg').try(:url) || '#' %>">
     </div>
     </div>
 
     <div class="column left" style="width: 130px; margin: 10px 0 10px 6px;">
     <h2 class="sub-head center">都立<br>富士高等学校<br>旧校章</h2>
     <div class="content center">
-    <img src="http://www.fuji-daigo-wakatakekai.org/top/SM_01B.jpg">
+    <img src="<%= Upload.get('SM_01B.jpg').try(:url) || '#' %>">
     </div>
     </div>
 
     <div class="column left" style="width: 129px; margin: 10px 0 10px 6px;">
     <h2 class="sub-head center">都立富士高等学校<br>及び附属中学校<br>新校章</h2>
     <div class="content center">
-    <img src="http://www.fuji-daigo-wakatakekai.org/top/SM_02B.jpg">
+    <img src="<%= Upload.get('SM_02B.jpg').try(:url) || '#' %>">
     </div>
   </div>
 </div>
