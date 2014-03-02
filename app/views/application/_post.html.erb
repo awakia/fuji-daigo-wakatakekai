@@ -1,4 +1,4 @@
-<div class="column">
+<div class="column"<%= post.hash_name.present? ? " id=\"#{post.hash_name}\"" : "" %>>
 <div class="sub-head clearfix">
   <h2 class="left">
     <%= post.title.html_safe %>
