@@ -29,6 +29,7 @@ gem 'thin'
 gem 's3_file_field'
 gem 'simple_enum'
 gem 'carrierwave'
+gem 'fog'
 
 group :development do
   # Use sqlite3 as the database for Active Record
