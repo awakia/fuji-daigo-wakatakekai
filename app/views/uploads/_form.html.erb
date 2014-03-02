@@ -29,7 +29,7 @@
   <div class="field">
     <% if @upload.url.present? %>
       <%= link_to @upload.url do %>
-        <div id="thum-image" class="img-contain" style="background-image: url('<%= @upload.url %>'); width: 200px; height: 200px;"></div>
+        <div id="thumb-image" class="img-contain" style="background-image: url('<%= @upload.thumb_url %>'); width: 200px; height: 200px;"></div>
       <% end %>
       <br>
     <% end %>
@@ -44,7 +44,7 @@
   <%= javascript_tag do %>
     $(function() {
       $(document).on('change', '#upload_file', function() {
-        $('#thum-image').hide();
+        $('#thumb-image').hide();
       });
     });
   <% end %>

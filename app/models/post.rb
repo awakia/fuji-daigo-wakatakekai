@@ -32,11 +32,17 @@ class Post < ActiveRecord::Base
       @parsed_content = ""
       segments = content.split /(\[\[.*?\]\])/
       segments.each do |seg|
-        matched = seg.match /\[\[(.*?)(?:\((\d+),(\d+)\))?(:nolink)?\]\]/
+        matched = seg.match /\[\[(.*?)(?:\((\d+),(\d+)\))?(:nolink|:square)?(:thumb)?\]\]/
         if matched && (upload = Upload.get(matched[1]))
           size_condition = matched[2] && matched[3] ? " width='#{matched[2]}px' height='#{matched[3]}px'" : ""
-          image = "<img class='content-image' src='#{upload.url}'#{size_condition}>"
-          image = "<a href='#{upload.url}'>#{image}</a>" unless matched[4]
+          image = ''
+          if matched[4] == ':square'
+            image = "<a href='upload.url'>■</a>"
+          else
+            image_url = matched[5] == ':thumb' ? upload.thumb_url : upload.url
+            image = "<img class='content-image' src='#{image_url}'#{size_condition}>"
+            image = "<a href='#{upload.url}'>#{image}</a>" if matched[4] != ':nolink'
+          end
           @parsed_content += image
         else
           @parsed_content += seg

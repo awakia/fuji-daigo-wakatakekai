@@ -3,11 +3,15 @@ class Upload < ActiveRecord::Base
   mount_uploader :file, FileUploader
 
   def image_type?
-    name =~ /\.(jpe?g|png|gif|tiff?|bmp)$/i
+    file && file.content_type.start_with?('image')
   end
 
   def url
-    file ? file.default.url : nil
+    file ? file.url : nil
+  end
+
+  def thumb_url
+    file ? file.thumb.url || file.url : nil
   end
 
   def self.get(name, category: nil)
