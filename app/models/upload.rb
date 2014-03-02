@@ -1,8 +1,13 @@
 class Upload < ActiveRecord::Base
   belongs_to :post
+  mount_uploader :file, FileUploader
 
   def image_type?
     name =~ /\.(jpe?g|png|gif|tiff?|bmp)$/i
+  end
+
+  def url
+    file ? file.default.url : nil
   end
 
   def self.get(name, category: nil)

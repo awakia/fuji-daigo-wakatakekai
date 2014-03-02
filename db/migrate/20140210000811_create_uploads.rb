@@ -4,7 +4,7 @@ class CreateUploads < ActiveRecord::Migration
       t.references :post, index: true
       t.string :category
       t.string :name
-      t.string :url
+      t.string :file
 
       t.timestamps
     end

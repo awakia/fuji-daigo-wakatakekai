@@ -24,10 +24,25 @@
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :url %><br>
-    <%= f.text_field :url %>
+    <% if @upload.url.present? %>
+      <%= link_to @upload.url do %>
+        <div id="thum-image" class="img-contain" style="background-image: url('<%= @upload.url %>'); width: 200px; height: 200px;"></div>
+      <% end %>
+      <br>
+    <% end %>
+    <%= f.file_field :file %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
+<% end %>
+
+<% content_for :extra_scripts do %>
+  <%= javascript_tag do %>
+    $(function() {
+      $(document).on('change', '#upload_file', function() {
+        $('#thum-image').hide();
+      });
+    });
+  <% end %>
 <% end %>

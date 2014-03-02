@@ -36,6 +36,29 @@
   display: none;
 }
 
+.img-cover {
+  display: inline-block;
+  background-color: #ccc;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 5px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  background-size: cover;
+}
+.img-contain {
+  display: inline-block;
+  background-color: #ccc;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 5px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  background-size: contain;
+}
+
 /* global clear */
 
 p, h1, h2, h3, h4, h5, h6 {

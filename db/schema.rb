@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 20140210000811) do
     t.integer  "post_id"
     t.string   "category"
     t.string   "name"
-    t.string   "url"
+    t.string   "file"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
