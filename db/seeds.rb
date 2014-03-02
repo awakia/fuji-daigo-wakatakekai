@@ -31,7 +31,7 @@ end
 filename = Rails.root.join('db', 'uploads.csv')
 CSV.open(filename, headers: true).each do |row|
   u = Upload.where(category: row['category'], name: row['name']).first_or_initialize
-  u.file = row['file']
+  u[:file] = row['file']
   u.save!
 end
 
