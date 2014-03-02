@@ -28,6 +28,7 @@ gem 'thin'
 
 gem 's3_file_field'
 gem 'simple_enum'
+gem 'mini_magick'
 gem 'carrierwave'
 gem 'fog'
 
