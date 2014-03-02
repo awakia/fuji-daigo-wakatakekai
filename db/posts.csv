@@ -2170,3 +2170,18 @@ anniv_mag,,富士高編集記念誌,"閲覧する場合は■をクリックし�
     <td align=""center"">&nbsp;</td>
   </tr>
 </table>",html
+song,,校歌,"[[song_page.jpg(550,406):nolink]]<br>
+拡大表示する場合は■をクリックしてください。<br>
+<br>
+<table width=""300"" border=""0"" cellspacing=""0"" cellpadding=""4"">
+  <tr align=""left"">
+    <td width=""176"">東京府立第五高等女学校・校歌</td>
+    <td width=""50"">[[score_daigo.jpg:square]]楽譜</td>
+    <td width=""50"">[[lyrics_daigo.jpg:square]]歌詞</td>
+  </tr>
+  <tr align=""left"">
+    <td>東京都立富士高等学校・校歌</td>
+    <td>[[score_fuji.jpg:square]]楽譜</td>
+    <td>[[lyrics_fuji.jpg:square]]歌詞</td>
+  </tr>
+</table>",html
