@@ -26,7 +26,6 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'thin'
 
-gem 's3_file_field'
 gem 'simple_enum'
 gem 'mini_magick'
 gem 'carrierwave'
