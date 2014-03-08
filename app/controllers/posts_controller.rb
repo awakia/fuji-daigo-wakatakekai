@@ -29,7 +29,7 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
-        format.html { redirect_to pages_path(@post.path), notice: '正常に新規投稿が作成されました' }
+        format.html { redirect_to @post.draft? ? post_path(@post) : pages_path(@post.path), notice: '正常に新規投稿が作成されました' }
         format.json { render action: 'show', status: :created, location: @post }
       else
         format.html { render action: 'new' }
@@ -43,7 +43,7 @@ class PostsController < ApplicationController
   def update
     respond_to do |format|
       if @post.update(post_params)
-        format.html { redirect_to pages_path(@post.path), notice: '正常に投稿が更新されました' }
+        format.html { redirect_to @post.draft? ? post_path(@post) : pages_path(@post.path), notice: '正常に投稿が更新されました' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
