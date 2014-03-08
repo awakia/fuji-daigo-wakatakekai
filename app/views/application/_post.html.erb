@@ -6,7 +6,7 @@
     （下書き）
     <% end %>
   </h2>
-  <% if cookies[:role] == 'fdw' %>
+  <% if cookies[:role] == 'fdw' || params[:controller] == 'posts' %>
     <%= link_to "編集", edit_post_path(post), class: "right" %>
   <% end %>
 </div>
