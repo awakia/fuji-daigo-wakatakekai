@@ -13,6 +13,11 @@ class Post < ActiveRecord::Base
     where(Post.arel_table[:published_at].not_eq(nil))
   }
 
+  def initialize(args)
+    super
+    set_published_at
+  end
+
   def draft=(val)
     @set_draft = val.to_i != 0
   end
@@ -69,7 +74,6 @@ class Post < ActiveRecord::Base
     def set_draft
       if @set_draft
         self.published_at = nil
-        @set_draft = nil
       end
     end
 
