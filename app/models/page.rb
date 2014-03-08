@@ -40,14 +40,14 @@ class Page
       Page.new(path: :fusoku, title: '附則', parent: :about_us),
       Page.new(path: :meibo, title: '役員名簿', parent: :about_us),
       Page.new(path: :history, title: '沿革', parent: :about_us),
-      Page.new(path: :whats_new, title: "更新履歴<br>(What's New)"),
       Page.new(path: :link, title: 'リンク集'),
       Page.new(path: :register, title: 'メールアドレス登録フォーム'),
       Page.new(path: :form, title: '事務局への<br>連絡フォーム'),
       Page.new(path: :ucontact, title: '会員連絡先変更届'),
-      # Page.new(path: :archive, title: 'アーカイブ'),
-      # Page.new(path: :greeting, title: 'HP開設にあたり'),
-      # Page.new(path: :letter, title: '役員会だより'),
+      Page.new(path: :before2014, title: 'アーカイブ'),
+      Page.new(path: :greeting, title: 'HP開設にあたり', parent: :before2014),
+      Page.new(path: :letter, title: '役員会だより', parent: :before2014),
+      Page.new(path: :whats_new, title: "更新履歴<br>(What's New)", parent: :before2014),
     ]
   end
 
