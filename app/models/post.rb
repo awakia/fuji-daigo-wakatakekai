@@ -14,9 +14,7 @@ class Post < ActiveRecord::Base
   }
 
   def draft=(val)
-    if val.to_i != 0
-      @set_draft = true
-    end
+    @set_draft = val.to_i != 0
   end
 
   def draft
