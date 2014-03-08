@@ -17,7 +17,7 @@
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.path %></td>
-        <td><%= link_to post.title, edit_post_path(post) %></td>
+        <td><%= link_to post.link_title, edit_post_path(post) %></td>
         <td><%= post.published_at ? l(post.published_at) : '下書き' %></td>
         <td><%= button_to '削除', post, method: :delete, data: { confirm: '本当に削除してよろしいですか？' } %></td>
       </tr>

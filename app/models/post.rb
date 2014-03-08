@@ -18,6 +18,10 @@ class Post < ActiveRecord::Base
     set_published_at
   end
 
+  def link_title
+    title.present? ? title : "（無題）"
+  end
+
   def draft=(val)
     @set_draft = val.to_i != 0
   end
