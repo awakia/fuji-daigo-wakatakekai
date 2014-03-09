@@ -54,7 +54,7 @@ class Post < ActiveRecord::Base
             image = "<a href='#{upload.url}'>#{upload.filename}</a>"
           else
             image_url = matched[5] == ':thumb' ? upload.thumb_url : upload.url
-            image = "<img class='content-image' src='#{image_url}'#{size_condition}>"
+            image = "<img src='#{image_url}'#{size_condition}>"
             image = "<a href='#{upload.url}'>#{image}</a>" if matched[4] != ':nolink'
           end
           @parsed_content += image

@@ -8,7 +8,7 @@
 <div class="content">
   <%= link_to @upload.url do %>
     <% if @upload.image_type? %>
-      <%= image_tag @upload.url, alt: @upload.name, class: "content-image" %>
+      <%= image_tag @upload.url, alt: @upload.name %>
     <% else %>
       ダウンロード
     <% end %>

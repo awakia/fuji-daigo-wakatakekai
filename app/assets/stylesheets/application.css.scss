@@ -129,7 +129,7 @@ textarea {
       font-family: monospace;
     }
   }
-  .content-image {
+  img {
     max-width: 560px;
   }
 }
@@ -146,7 +146,7 @@ textarea {
 #left-content {
   float: left;
   width: 414px;
-  .content-image {
+  img {
     max-width: 382px;
   }
 }
@@ -154,7 +154,7 @@ textarea {
 #right-content {
   float: right;
   width: 162px;
-  .content-image {
+  img {
     max-width: 130px;
   }
 }
