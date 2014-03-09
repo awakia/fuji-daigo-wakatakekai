@@ -5,7 +5,7 @@ class AdminController < ApplicationController
   end
 
   def become_admin
-    cookies[:role] = { value: 'fdw', expires: 1.hour.from_now }
+    cookies[:role] = { value: 'fdw' }
     redirect_to root_path
   end
 end
