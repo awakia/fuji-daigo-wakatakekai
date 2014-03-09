@@ -41,7 +41,7 @@ class Post < ActiveRecord::Base
       segments.each do |seg|
         matched = seg.match /\[\[(.*?)(?:\((\d+),(\d+)\))?(:nolink|:link|:square)?(:thumb)?\]\]/i
         if matched && matched[1] == '__gallery__'
-          Upload.where(category: "#{path}##{hash_name}").order(:created_at).each do |upload|
+          uploads.order(:created_at).each do |upload|
             image = "<a href='#{upload.url}'><div class='img-cover' style='background-image: url(#{upload.thumb_url});'></div></a>"
             @parsed_content += image
           end
