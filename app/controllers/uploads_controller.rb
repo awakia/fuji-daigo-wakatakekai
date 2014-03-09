@@ -1,5 +1,5 @@
 class UploadsController < ApplicationController
-  before_action :authenticate_admin, except: [:create, :update]
+  before_action :authenticate_admin, except: [:show]
   before_action :set_upload, only: [:show, :edit, :update, :destroy]
 
   # GET /uploads
