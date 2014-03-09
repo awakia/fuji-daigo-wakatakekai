@@ -196,6 +196,11 @@ textarea {
   margin-bottom: 20px;
 }
 
+.no-content {
+  margin: 10px;
+  font-size: 10px;
+}
+
 .pages-photo-album {
   .column {
     .img-cover {
@@ -204,5 +209,12 @@ textarea {
       width: 175px;
       height: 175px;
     }
+  }
+}
+
+.edit-gallery {
+  .img-cover {
+    width: 100px;
+    height: 100px;
   }
 }
