@@ -12,7 +12,7 @@ FujiDaigoWakatakekai::Application.routes.draw do
   end
 
   match "/:action",
-    :constraints => { :action => /#{Page.all.map(&:path).join('|')}/ },
+    :constraints => { :action => /#{Page.all.map(&:path).join('|')}|reset/ },
     :to => 'pages',
     :as => :pages,
     :via => [:get, :post]

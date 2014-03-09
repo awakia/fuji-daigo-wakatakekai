@@ -11,9 +11,9 @@
 <div id="wrapper">
 
 <div id="header">
-
-<%= image_tag "title_top.jpg", width: "720", height: "48" %>
-
+<%= link_to pages_path(:reset) do %>
+  <%= image_tag "title_top.jpg", width: "720", height: "48" %>
+<% end %>
 </div>
 
 <div id="container" class="<%= main_content_classes %>">

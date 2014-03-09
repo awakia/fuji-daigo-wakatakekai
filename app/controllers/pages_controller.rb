@@ -22,6 +22,11 @@ class PagesController < ApplicationController
     @side_posts = Post.published.where(path: :root_side).order(:published_at).reverse_order
   end
 
+  def reset
+    cookies.delete(:role)
+    redirect_to :root
+  end
+
   private
     def render_page
       @posts = Post.published.where(path: params[:action]).order(:published_at).reverse_order
