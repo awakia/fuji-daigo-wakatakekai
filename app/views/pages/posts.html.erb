@@ -1,5 +1,13 @@
-<% if cookies[:role] == 'fdw' %>
-  <%= link_to '新規投稿作成', new_post_path(path: params[:action]) %>
-<% end %>
+<div class="clearfix">
+  <% if cookies[:role] == 'fdw' %>
+    <div class="left"><%= link_to '新規投稿作成', new_post_path(path: params[:action]) %></div>
+  <% end %>
+
+  <% if params[:action].in? ['info', 'archive'] %>
+    <div class="right">
+      <%= link_to '管理画面へ', admin_index_path %>
+    </div>
+  <% end %>
+</div>
 
 <%= render partial: 'post', collection: @posts %>
