@@ -24,20 +24,7 @@
     <%= f.text_area :content, style: "width: 500px; height: 250px;" %>
   </div>
 
-  <div class="field edit-gallery">
-    関連付けられた画像<br>
-    <% if @post.uploads.present? %>
-      <% @post.uploads.each do |upload| %>
-        <a href='<%= upload_path(upload) %>' target='_blank'>
-          <div class='img-cover' style='background-image: url(<%= upload.thumb_url %>);'></div>
-        </a>
-      <% end %>
-    <% else %>
-      <p class="no-content">
-        関連画像はありません
-      </p>
-    <% end %>
-  </div>
+  <%= render "uploads", post: @post %>
 
   <div class="field">
     <%= f.check_box :format_cd %>
