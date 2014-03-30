@@ -3,6 +3,8 @@ class Upload < ActiveRecord::Base
   mount_uploader :file, FileUploader
   before_save :set_info
 
+  validates_presence_of :file
+
   def image_type?
     file && file.content_type.start_with?('image')
   end
