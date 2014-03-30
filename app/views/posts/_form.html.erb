@@ -24,9 +24,8 @@
     <%= f.text_area :content, style: "width: 500px; height: 250px;" %>
   </div>
 
+  <%= link_to "画像の追加", "#upload-modal", class: "ui-show-modal" %>
   <%= render "uploads", post: @post %>
-  <%= link_to "ダイアログを表示(CSSでサイズをカスタマイズ)", "#upload-modal", class: "ui-show-modal" %>
-  <%= render_dialog "upload", id: "upload-modal", scroll: true, title: "画像の追加", upload: @post.uploads.build %>
 
   <div class="field">
     <%= f.check_box :format_cd %>
@@ -45,6 +44,8 @@
     <%= f.submit "反映" %>
   </div>
 <% end %>
+
+<%= render_dialog "upload", id: "upload-modal", scroll: true, title: "画像の追加", upload: Upload.where(post_id: @post).new %>
 
 <% content_for :extra_scripts do %>
   <%= javascript_tag do %>
