@@ -1,4 +1,4 @@
-<%= form_for upload, remote: true do |f| %>
+<%= form_for upload, remote: true, authenticity_token: true do |f| %>
   <% if upload.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(upload.errors.count, "error") %> prohibited this upload from being saved:</h2>
@@ -12,18 +12,6 @@
   <% end %>
 
   <%= f.hidden_field :post_id %>
-  <% if upload.post.present? %>
-    <div class="field">
-      以下のページから投稿<br>
-      <%= link_to upload.post.title, post_path(upload.post) %>
-    </div>
-  <% end %>
-  <!--
-  <div class="field">
-    <%= f.label :category, "カテゴリ" %><br>
-    <%= f.text_field :category %>
-  </div>
-  -->
   <% unless upload.new_record? %>
     <div class="field">
       <%= f.label :name, "投稿からの参照名" %><br>
@@ -47,4 +35,14 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+<% end %>
+
+<% content_for :extra_scripts do %>
+  <%= javascript_tag do %>
+    $(function() {
+      $(document).on('change', '#upload_file', function() {
+        $('#thumb-image').hide();
+      });
+    });
+  <% end %>
 <% end %>
