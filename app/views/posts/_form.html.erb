@@ -25,6 +25,8 @@
   </div>
 
   <%= render "uploads", post: @post %>
+  <%= link_to "ダイアログを表示(CSSでサイズをカスタマイズ)", "#upload-modal", class: "ui-show-modal" %>
+  <%= render_dialog "upload", id: "upload-modal", scroll: true, title: "画像の追加", upload: @post.uploads.build %>
 
   <div class="field">
     <%= f.check_box :format_cd %>

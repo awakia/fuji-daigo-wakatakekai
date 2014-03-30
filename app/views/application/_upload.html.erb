@@ -1,0 +1,50 @@
+<%= form_for upload, remote: true do |f| %>
+  <% if upload.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(upload.errors.count, "error") %> prohibited this upload from being saved:</h2>
+
+      <ul>
+      <% upload.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= f.hidden_field :post_id %>
+  <% if upload.post.present? %>
+    <div class="field">
+      以下のページから投稿<br>
+      <%= link_to upload.post.title, post_path(upload.post) %>
+    </div>
+  <% end %>
+  <!--
+  <div class="field">
+    <%= f.label :category, "カテゴリ" %><br>
+    <%= f.text_field :category %>
+  </div>
+  -->
+  <% unless upload.new_record? %>
+    <div class="field">
+      <%= f.label :name, "投稿からの参照名" %><br>
+      <%= f.text_field :name %>
+    </div>
+  <% end %>
+  <div class="field">
+    <% if upload.url.present? %>
+      <% if upload.image_type? %>
+        <%= link_to upload.url, target: "_blank", id: "thumb-image" do %>
+          <%= image_tag upload.thumb_url %>
+        <% end %>
+      <% else %>
+        <%= link_to upload.filename, upload.url, target: "_blank" %>
+      <% end %>
+      <br>
+      画像の変更：
+    <% end %>
+    <%= f.file_field :file %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,26 @@
+<% raise "'id' is required" if id.blank? %>
+<% scroll ||= false %>
+<% title ||= nil %>
+<div class="ui-modal-wrapper" style="display: none;" id="<%= id %>">
+  <div class="ui-modal-overlay">
+    <span class="ui-modal-close">
+      <i class="fa fa-times"></i>
+    </span>
+  </div>
+  <div class="ui-modal-contents-container">
+    <div class="ui-modal-contents-inner">
+      <% if title.present? %>
+        <h6 class="ui-modal-contents-title"><%= title %></h6>
+      <% end %>
+      <div class="ui-modal-contents">
+        <% if scroll %>
+          <div class="scroll-contents-wrapper">
+            <div class="scroll-contents-inner"><%= yield %></div>
+          </div>
+        <% else %>
+          <%= yield %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

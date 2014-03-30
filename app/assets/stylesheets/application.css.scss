@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import "compass";
+@import "font-awesome";
 
 /* basic css */
 
@@ -216,5 +218,64 @@ textarea {
   .img-cover {
     width: 100px;
     height: 100px;
+  }
+}
+
+.ui-modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  .ui-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
+    @include opacity(0.9);
+    span {
+      display: block;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      color: #999;
+      font-size: 24px;
+      cursor: pointer;
+      &:hover {
+        color: #666;
+      }
+    }
+  }
+  .ui-modal-contents-container {
+    .ui-modal-contents-inner {
+      $width: 680px;
+      width: $width;
+      margin-left: -$width / 2;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      background: #fff;
+      @include box-shadow(0 0 20px rgba(0,0,0,0.4));
+      @include border-radius(6px);
+      .ui-modal-contents-title {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 50px;
+        border-bottom: 1px solid #eee;
+        padding: 0 20px;
+        color: #222;
+      }
+      .ui-modal-contents {
+        padding: 20px;
+      }
+      .scroll-contents-wrapper {
+        height: 480px;
+        overflow: scroll;
+      }
+    }
   }
 }
