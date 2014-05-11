@@ -31,9 +31,11 @@ class UploadsController < ApplicationController
       if @upload.save
         format.html { redirect_to @upload, notice: 'ファイルが正常にアップロードされました' }
         format.json { render action: 'show', status: :created, location: @upload }
+        format.js
       else
         format.html { render action: 'new' }
         format.json { render json: @upload.errors, status: :unprocessable_entity }
+        format.js
       end
     end
   end
