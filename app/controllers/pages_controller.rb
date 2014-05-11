@@ -17,8 +17,8 @@ class PagesController < ApplicationController
   def root
     @posts =
       Post.published.where(path: :root_top).order(:published_at).reverse_order.all +
-      Post.published.where(path: :info).order(:published_at).reverse_order.first(3) +
-      @posts
+      Post.published.where(path: :root).order(:published_at).reverse_order.first(3) +
+      Post.published.where(path: :root_bottom).order(:published_at).reverse_order.first(3)
     @side_posts = Post.published.where(path: :root_side).order(:published_at).reverse_order
   end
 

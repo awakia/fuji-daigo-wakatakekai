@@ -29,6 +29,7 @@ class Page
       Page.new(path: :root, title: 'トップページ'),
       Page.new(path: :root_top, title: 'トップページ(上部)', within: :root),
       Page.new(path: :root_side, title: 'トップページ(右側)', within: :root),
+      Page.new(path: :root_bottom, title: 'トップページ(下部)', within: :root),
       Page.new(path: :report, title: '若竹だより'),
       Page.new(path: :info, title: '事務局からのお知らせ'),
       Page.new(path: :photo_album, title: 'フォト<br>アルバム'),
