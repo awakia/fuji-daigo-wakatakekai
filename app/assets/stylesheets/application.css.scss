@@ -90,6 +90,15 @@ a {
   }
 }
 
+input, textarea {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+select, button, input[type=button], input[type=submit] {
+  font-size: 18px;
+}
+
 textarea {
   resize: vertical;
 }
