@@ -48,7 +48,7 @@ end
 
 group :test, :development do
   gem 'pry-rails'
-  gem 'pry-doc'
+  gem 'pry-doc', '0.6.0'
   gem 'pry-stack_explorer'
 
   if RUBY_VERSION >= '2.0.0'
