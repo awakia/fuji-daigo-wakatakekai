@@ -1,9 +1,11 @@
 <div class="column"<%= post.hash_name.present? ? " id=\"#{post.hash_name}\"" : "" %>>
 <div class="sub-head clearfix">
   <h2 class="left" id="post<%= post.id %>">
-    <%= post.link_title.html_safe %>
-    <% if post.draft? %>
-    （下書き）
+    <%= link_to url_for(anchor: "post#{post.id}"), class: "anchor" do %>
+      <%= post.link_title.html_safe %>
+      <% if post.draft? %>
+      （下書き）
+      <% end %>
     <% end %>
   </h2>
   <% if cookies[:role] == 'fdw' || params[:controller] == 'posts' %>

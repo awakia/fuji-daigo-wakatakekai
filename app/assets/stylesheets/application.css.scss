@@ -227,3 +227,11 @@ textarea {
     height: 100px;
   }
 }
+
+a.anchor {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: underline;
+  }
+}
