@@ -1,6 +1,6 @@
 <div class="column"<%= post.hash_name.present? ? " id=\"#{post.hash_name}\"" : "" %>>
 <div class="sub-head clearfix">
-  <h2 class="left">
+  <h2 class="left" id="post<%= post.id %>">
     <%= post.link_title.html_safe %>
     <% if post.draft? %>
     （下書き）
