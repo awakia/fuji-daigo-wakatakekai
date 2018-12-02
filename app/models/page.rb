@@ -31,7 +31,7 @@ class Page
       Page.new(path: :root_side, title: 'トップページ(右側)', within: :root),
       Page.new(path: :root_bottom, title: 'トップページ(下部)', within: :root),
       Page.new(path: :report, title: '若竹だより'),
-      Page.new(path: :reunion, title: '同期会リポート'),
+      Page.new(path: :reunion, title: '創立100特集'),
       Page.new(path: :info, title: '事務局からのお知らせ'),
       Page.new(path: :photo_album, title: 'フォト<br>アルバム'),
       Page.new(path: :song, title: '校歌'),
