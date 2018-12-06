@@ -28,6 +28,5 @@ module FujiDaigoWakatakekai
     config.time_zone = 'Tokyo'
 
     config.i18n.default_locale = :ja
-    config.serve_static_assets = true
   end
 end

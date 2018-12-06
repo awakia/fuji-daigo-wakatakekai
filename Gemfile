@@ -1,3 +1,4 @@
+ruby "2.3.0"
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -38,7 +39,7 @@ end
 
 group :production do
   gem 'pg'
-  gem 'rails_12factor'  # for heroku
+  # gem 'rails_12factor'  # for heroku
 end
 
 group :doc do
