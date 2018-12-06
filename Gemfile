@@ -27,7 +27,7 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'thin'
 
-gem 'simple_enum'
+gem 'simple_enum', '~> 1.6.9'
 gem 'mini_magick'
 gem 'carrierwave'
 gem 'fog'
