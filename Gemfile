@@ -31,7 +31,6 @@ gem 'simple_enum', '~> 1.6.9'
 gem 'mini_magick'
 gem 'carrierwave'
 gem 'fog'
-gem 'pg'
 
 group :development do
   # Use sqlite3 as the database for Active Record
@@ -39,6 +38,7 @@ group :development do
 end
 
 group :production do
+  gem 'pg', '~> 0.19.0'
   gem 'rails_12factor'  # for heroku
 end
 
