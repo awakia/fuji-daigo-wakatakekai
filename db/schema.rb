@@ -11,9 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140210000811) do
+ActiveRecord::Schema.define(version: 20181209052059) do
 
-  create_table "posts", force: true do |t|
+  create_table "posts", force: :cascade do |t|
     t.string   "path"
     t.string   "hash_name"
     t.string   "title"
@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 20140210000811) do
 
   add_index "posts", ["path"], name: "index_posts_on_path"
 
-  create_table "uploads", force: true do |t|
+  create_table "uploads", force: :cascade do |t|
     t.integer  "post_id"
     t.string   "category"
     t.string   "name"
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20140210000811) do
     t.datetime "updated_at"
   end
 
+  add_index "uploads", ["name"], name: "index_uploads_on_name"
   add_index "uploads", ["post_id"], name: "index_uploads_on_post_id"
 
 end
