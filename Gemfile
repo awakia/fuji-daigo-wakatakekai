@@ -32,6 +32,7 @@ gem 'mini_magick'
 gem 'carrierwave'
 gem 'fog'
 gem 'kaminari'
+gem 'kaminari-i18n'
 
 group :development do
   # Use sqlite3 as the database for Active Record
