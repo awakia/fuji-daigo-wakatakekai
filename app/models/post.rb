@@ -13,6 +13,8 @@ class Post < ActiveRecord::Base
     where(Post.arel_table[:published_at].not_eq(nil))
   }
 
+  paginates_per 5
+
   def initialize(args)
     super
     set_published_at
